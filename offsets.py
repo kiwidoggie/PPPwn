@@ -20,10 +20,10 @@ class OffsetsFirmware_672:
     # 0xffffffff823fb949 : mov cr0, rsi ; ud2 ; mov eax, 1 ; ret
     MOV_CR0_RSI_UD2_MOV_EAX_1_RET = 0xFFFFFFFF82368769
 
-    SECOND_GADGET_OFF = 0x3d
+    SECOND_GADGET_OFF = 0x3b
 
-    # 0xffffffff82996603 : jmp qword ptr [rsi + 0x3d]
-    FIRST_GADGET = 0xffffffff82996603 # NEED
+    # 0xffffffff82329bad : jmp qword ptr [rsi + 0x3b]
+    FIRST_GADGET = 0xffffffff82329bad
 
     # 0xffffffff82c76646 : push rbp ; jmp qword ptr [rsi]
     PUSH_RBP_JMP_QWORD_PTR_RSI = 0xffffffff82c960f6
@@ -34,8 +34,8 @@ class OffsetsFirmware_672:
     # 0xffffffff82941e46 : lea rsp, [rsi + 0x20] ; repz ret
     LEA_RSP_RSI_20_REPZ_RET = 0xffffffff8295bac6
 
-    # 0xffffffff826c52aa : add rsp, 0x28 ; pop rbp ; ret
-    ADD_RSP_28_POP_RBP_RET = 0xffffffff826c52aa # NEED
+    # 0xffffffff826ed57f
+    ADD_RSP_28_POP_RBP_RET = 0xffffffff826ed57f
 
     # 0xffffffff8251b08f : add rsp, 0xb0 ; pop rbp ; ret
     ADD_RSP_B0_POP_RBP_RET = 0xffffffff82518d2b
@@ -55,8 +55,8 @@ class OffsetsFirmware_672:
     # 0xffffffff822445e7 : pop rcx ; ret
     POP_RCX_RET = 0xffffffff82233adf
 
-    # 0xffffffff822ab4dd : pop r8 ; pop rbp ; ret
-    POP_R8_POP_RBP_RET = 0xffffffff822ab4dd # NEED
+    # 0xffffffff825272c9
+    POP_R8_POP_RBP_RET = 0xffffffff825272c9
 
     # 0xffffffff8279fa0f : pop r12 ; ret
     POP_R12_RET = 0xffffffff825bd011
@@ -70,8 +70,8 @@ class OffsetsFirmware_672:
     # 0xffffffff82bb687a : push rsp ; pop rsi ; ret
     PUSH_RSP_POP_RSI_RET = 0xffffffff82bd4e1a
 
-    # 0xffffffff82244ed0 : mov rdi, qword ptr [rdi] ; pop rbp ; jmp rax
-    MOV_RDI_QWORD_PTR_RDI_POP_RBP_JMP_RAX = 0xffffffff82244ed0 # NEED
+    # : mov rdi, qword ptr [rdi] ; pop rbp ; jmp rax /  0xffffffff8249b03c Changed To : mov rdi, qword ptr [rdi] ; jmp rax
+    MOV_RDI_QWORD_PTR_RDI_POP_RBP_JMP_RAX = 0xffffffff8249b03c
 
     # 0xffffffff82b7450e : mov byte ptr [rcx], al ; ret
     MOV_BYTE_PTR_RCX_AL_RET = 0xffffffff82b92a7a
@@ -91,8 +91,8 @@ class OffsetsFirmware_672:
     # 0xffffffff82cb683a : add rdi, rcx ; ret
     ADD_RDI_RCX_RET = 0xffffffff82cd62ea
 
-    # 0xffffffff82409557 : sub rsi, rdx ; mov rax, rsi ; pop rbp ; ret
-    SUB_RSI_RDX_MOV_RAX_RSI_POP_RBP_RET = 0xffffffff82409557 # NEED
+    # : sub rsi, rdx ; mov rax, rsi ; pop rbp ; ret / 0xffffffff824a8427 Changed To : sub rsi, rdx ; mov rax, rsi ; ret
+    SUB_RSI_RDX_MOV_RAX_RSI_POP_RBP_RET = 0xffffffff824a8427
 
     # 0xffffffff82b85693 : jmp r14
     JMP_R14 = 0xffffffff82ba3c2b
