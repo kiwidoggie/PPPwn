@@ -9,26 +9,27 @@
 #define __OFFSETS_H__
 
 #if FIRMWARE == 672
-#define kdlsym_addr_Xfast_syscall 0xFFFFFFFF822001C0
+#define kdlsym_addr_Xfast_syscall 0xffffffff822001c0
 
-#define kdlsym_addr_printf 0xFFFFFFFF82323280
+#define kdlsym_addr_printf 0xffffffff82323280
 
-#define kdlsym_addr_sysent 0xFFFFFFFF8331E000
+#define kdlsym_addr_sysent 0xffffffff8331e000
 
-#define kdlsym_addr_amd_syscall_patch1 0xFFFFFFFF82200490
-#define kdlsym_addr_amd_syscall_patch2 0xFFFFFFFF822004B9
-#define kdlsym_addr_amd_syscall_patch3 0xFFFFFFFF822004BD
-#define kdlsym_addr_amd_syscall_patch4 0xFFFFFFFF822004C6
+#define kdlsym_addr_amd_syscall_patch1 0xffffffff82200490
+#define kdlsym_addr_amd_syscall_patch2 0xffffffff822004b9
+#define kdlsym_addr_amd_syscall_patch3 0xffffffff822004bd
+#define kdlsym_addr_amd_syscall_patch4 0xffffffff822004c6
 
-#define kdlsym_addr_copyin_patch1 0xFFFFFFFF825C17F7
-#define kdlsym_addr_copyin_patch2 0xFFFFFFFF825C1803
+#define kdlsym_addr_copyin_patch1 0xffffffff825c17f7
+#define kdlsym_addr_copyin_patch2 0xffffffff825c1803
 
-#define kdlsym_addr_copyout_patch1 0xFFFFFFFF825C1702
-#define kdlsym_addr_copyout_patch2 0xFFFFFFFF825C170E
+#define kdlsym_addr_copyout_patch1 0xffffffff825c1702
+#define kdlsym_addr_copyout_patch2 0xffffffff825c170e
 
-#define kdlsym_addr_copyinstr_patch1 0xFFFFFFFF825C1CA3
-#define kdlsym_addr_copyinstr_patch2 0xFFFFFFFF825C1CAF
-#define kdlsym_addr_copyinstr_patch3 0xFFFFFFFF825C1CE0
+#define kdlsym_addr_copyinstr_patch1 0xffffffff825c1ca3
+#define kdlsym_addr_copyinstr_patch2 0xffffffff825c1caf
+#define kdlsym_addr_copyinstr_patch3 0xffffffff825c1ce0
+
 #elif FIRMWARE == 900 // FW 9.00
 
 #define kdlsym_addr_Xfast_syscall 0xffffffff822001c0
